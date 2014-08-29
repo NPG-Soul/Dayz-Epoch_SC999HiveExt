@@ -1,4 +1,4 @@
-DayZ-Epoch_SCHiveExt
+DayZ-Epoch_SC999HiveExt
 ====================
 A custom HiveExt.dll 
 
@@ -7,9 +7,11 @@ This custom hive is an updated version of the last official released epoch hive.
 It has the calls needed for basemaintenance.
 It has added support for Zupa's single currency mod.
 
-3 new calls where added and 2 updated:
+5 new calls where added and 2 updated:
 - New CHILD:298 >>> collects players bank data from the "banking_data" table.
 - New CHILD:299 >>> used to update a players bank data in the "banking_data" table.
+- New CHILD:999 >>> used to make a custom stream (queries that expect a result to return)
+- New CHILD:998 >>> used to make a custom execute (queries that save/manipulate data without return value)
 - New CHILD:104 >>> used by the server to collect all admin uid's and there matching admin level.
 - Updated CHILD:201 >>> new db field "CashMoney" used when updating a players data in the "character_data" table.
 - Updated CHILD:102 >>> now checks if playername was changed versus data from "banking_data" table. Updates if needed.
